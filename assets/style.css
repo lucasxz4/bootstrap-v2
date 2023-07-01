@@ -179,3 +179,85 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .h-one i {
+        display: none;
+    }
+    .navegacao {
+        padding-left: 0;
+    }
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .nav a {
+        font-size: 1.3em;
+    }
+    .ddm p {
+        font-size: 1.4em;
+        border-radius: 20px;
+    }
+    .t-initial p:nth-child(1) {
+        font-size: 3em;
+    }
+    .btns-initial button {
+        width: 40%;
+        font-size: 1.5em;
+    }
+    .person-image {
+        width: 50%; 
+    }
+    #about h1 {
+        position: relative;
+        font-size: 4.5em;
+        
+    }
+    #about h1::after {
+        position: absolute;
+        content: '.';
+        right: 0;
+        background: #fff;
+        width: 100%;
+        animation: text 3s steps(18) infinite alternate;
+    }
+    @keyframes text {
+        to {
+            width: 0px;
+        }
+    }
+    #about h3 {
+        font-size: 1.6rem;
+    }
+    #about p {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .sociais i {
+        font-size: 3rem;
+    }
+    footer {
+        background-color: #000;
+    }
+    footer p {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+    footer a ~ span {
+        color: #fff;
+        margin-top: 30px;
+    }
+}
